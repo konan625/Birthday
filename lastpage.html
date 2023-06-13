@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Last Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      color: #FF4081;
+      margin-top: 50px;
+    }
+
+    #gift-box {
+      width: 200px;
+      height: 200px;
+      background-image: url('gitf-box.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    #gift-box.open {
+      transform: scale(1.2);
+    }
+
+    #gift-box img {
+      display: none;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    #end-button {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ispe click karo..</h1>
+
+  <div id="gift-box"></div>
+
+  <h1>I love you forever meri jaan.....</h1>
+
+
+  <script>
+    const giftBox = document.getElementById('gift-box');
+    const endButton = document.getElementById('end-button');
+
+    // Open the gift box and show the image when clicked
+    giftBox.addEventListener('click', () => {
+      giftBox.classList.add('open');
+
+      // Display the image
+      const image = document.createElement('img');
+      image.src = 'Babu.jpeg';
+      giftBox.appendChild(image);
+    });
+
+    // Redirect to page2.html when the "END" button is clicked
+  </script>
+</body>
+</html>

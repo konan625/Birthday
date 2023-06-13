@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Main Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      text-decoration-style: wavy;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      color: #FF4081;
+      margin-top: 50px;
+    }
+
+    #card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    .card {
+      width: 200px;
+      height: 300px;
+      margin: 10px;
+      perspective: 1000px;
+      cursor: pointer;
+    }
+
+    .card-inner {
+      width: 100%;
+      height: 100%;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .card:hover .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-front,
+    .card-back {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      backface-visibility: hidden;
+      border-radius: 10px;
+    }
+
+    .card-front {
+      background-color: #FFC0CB;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #FF4081;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    .card-back {
+      background-color: #FFE0E6;
+      transform: rotateY(180deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #FF4081;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Let me describe what you are for me....hover over each card and read what it says.</h1>
+
+  <div id="card-container">
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="divyansh1.jpeg" alt="Divyansh">
+        </div>
+        <div class="card-back">
+          <p>Happy Birthday, My dear Babu! Since the day you have entered into my life, everything seems brighter..</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="divyansh2.jpg" alt="Divyansh">
+        </div>
+        <div class="card-back">
+          <p> Meko aise pareshaan krne wale mere babu ko janamdin ki bht bht badhaiyaan...july me aake mai bhi bht pareshaan krne wali hu tumhe to just wait and watch pura account khali krwa dungi</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="divyansh3.jpeg" alt="Divyansh">
+          </div>
+          <div class="card-back">
+            <p>I feel so lucky to call you mine. Aaj let me tell you how grateful I am to have you in my life. I see you as the most loving and caring person. Aise to tumhari qualities ko club kr pana mushkil hai since they are many, but still let me try..  </p>
+        </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="divyansh4.jpg" alt="Divyansh">
+          </div>
+          <div class="card-back">
+            <p>For starters let me appreciate your responsible nature towards anything that is associated with you whether its me, your studies , you family sabko tum bht achhe se sambhalte ho love, meko bhi sikha dena zara.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="divyansh5.jpg" alt="Divyansh">
+          </div>
+          <div class="card-back">
+            <p>Ye jo tumhari smile hai na iske liye mai kuch bhi krne ko taiyaar hu. Jabse ye kharghosh daant aaye hai na life me tabse maje hain zindagi ke. Tumhare jitna cute bhi koi nhi hai sachme damn...kabhi kabhi lgta hai ki kya banda pataya hai maine</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="divyansh6.jpg" alt="Divyansh">
+          </div>
+          <div class="card-back">
+            <p>Dekho is prani ko apne field  bht mehnat krta hai, thand me baccho ki tarah pura coil hoke blanket me so jata hai.Mere samne baby ban jata hai kabhi kabhi chhota sa (you understand the reference XD)schme whole package hai ye bachha mera</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="divyansh7.jpg" alt="Divyansh">
+          </div>
+          <div class="card-back">
+            <p>Thank you so much for existing . Giving me this amazing man as a partner. I hope ki aise hi ek din tum mere husband banke mujhe chai offer karo. You are such an amazing man my love ki literally I wonder ki kaise hi itna achha mil gya</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="divyansh8.jpeg" alt="Divyansh">
+          </div>
+          <div class="card-back">
+            <p>In this photo you kept you head on my lap for the first time, and I cant imagine the love and care I felt . Hamesha tumhe aise hi sulake pyaar karungi jaan. You are THE best person.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="divyansh9.jpeg" alt="Divyansh">
+          </div>
+          <div class="card-back">
+            <p>I think this is going to be your forever favourite place to put you head on XDD. I love you soooooo much meri jaan. Thank you being such a good human being.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="divyansh10.jpeg" alt="Divyansh">
+          </div>
+          <div class="card-back">
+            <p>Sabki help krte ho, mujhe kabhi sad rehne nhi dete, aasun mere girte hai lekin dukh tumhe hota hai, apni mummy ka , behen ka , sabkkka..dhyaan rakhte ho. Apna bhi rakha karo meri jaan. I am there for you </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="divyansh11.jpeg" alt="Divyansh">
+          </div>
+          <div class="card-back">
+            <p> Games khelta hua mera babu .... Apni har responsibility ko achhe se nibhane wale mere babu ko kisi ki nazar na lage and mera babu hamesha swasth and happy rahe. God bless you jaan and uncle too....Vo jaha bhi hai he is proud of you</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="divyansh12.jpg" alt="Divyansh">
+          </div>
+          <div class="card-back">
+            <p>The lyrics of this song is all dedicated to you . You are PERFECT. Happy birthday, Laddoo. Seeing you happy makes me happy, so enjoy your special day. Mast family ke sath enjoy krna. Apan waha aaenge na to dhamakedar celebration krenge. I love you </p>
+          </div>
+        </div>
+      </div>
+
+    <!-- Add more card elements here -->
+
+  </div>
+
+  <!-- Audio element for the song -->
+  <audio id="song" src="Ed Sheeran - Perfect (Lyrics).mp3" autoplay loop></audio>
+
+
+  <script>
+    // Play the song on page load
+    window.addEventListener('DOMContentLoaded', () => {
+      const song = document.getElementById('song');
+      song.play();
+    });
+
+    // Stop the song when the page is closed
+    window.addEventListener('beforeunload', () => {
+      const song = document.getElementById('song');
+      song.pause();
+    });
+
+    // Flip card on click
+    const cards = document.querySelectorAll('.card-inner');
+
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        card.classList.toggle('flipped');
+      });
+    });
+  </script>
+</body>
+</html>
